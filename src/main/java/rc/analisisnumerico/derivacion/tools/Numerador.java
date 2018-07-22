@@ -13,11 +13,16 @@ import java.util.List;
  * @author rcarlos
  */
 public class Numerador {
+
     private List<Double> coefX;
     private List<Double> coefH;
     private double xo;
     private double h;
     private Funcion funcion;
+
+    public Numerador() {
+
+    }
 
     public Numerador(double xo, double h, Funcion funcion) {
         this.xo = xo;
@@ -33,8 +38,8 @@ public class Numerador {
 
         return 0.0;
     }
-    
-    public void removeAll(){
+
+    public void removeAll() {
 
     }
 
@@ -61,8 +66,8 @@ public class Numerador {
     public void setFuncion(Funcion funcion) {
         this.funcion = funcion;
     }
-    
-    public int getTamanio(){
+
+    public int getTamanio() {
         return this.coefX.size();
     }
 }
