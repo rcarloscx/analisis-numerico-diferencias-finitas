@@ -44,7 +44,7 @@ public class FuncionTest {
     public void testEval() {
         System.out.println("eval");
         double x = 1.0;
-        Funcion instance = new Funcion("2(x)");
+        Funcion instance = new Funcion("(2)*(x)");
         double expResult = 2.0;
         double result = instance.eval(x);
         assertEquals(expResult, result, 2.0);
