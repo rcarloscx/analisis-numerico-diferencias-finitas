@@ -21,8 +21,10 @@ public class DiferenciasFinitas {
 
     //Diferencias finitas hacia adelante
     public double AdelantePrimeraOrden1() {
-
-        return 0;
+        numerador.removeAll();
+        numerador.add(1, 1);
+        numerador.add(-1, 0);
+        return numerador.reducir() / h;
     }
 
     public Funcion getFuncion() {
