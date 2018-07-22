@@ -19,6 +19,12 @@ public class DiferenciasFinitas {
         numerador = new Numerador(x, h, fun);
     }
 
+    //Diferencias finitas hacia adelante
+    public double AdelantePrimeraOrden1() {
+
+        return 0;
+    }
+
     public Funcion getFuncion() {
         return this.numerador.getFuncion();
     }
