@@ -31,16 +31,23 @@ public class Numerador {
     }
 
     public void add(double coeficienteFuncion, double coeficienteH) {
-
+        this.coefX.add(coeficienteFuncion);
+        this.coefH.add(coeficienteH);
     }
 
     public double reducir() {
-
-        return 0.0;
+        double num = 0.0;
+        double n;
+        for (int i = 0; i < coefX.size(); i++) {
+            n = this.coefX.get(i) * (funcion.eval(xo + ((coefH.get(i)) * (h))));
+            num = num + n;
+        }
+        return num;
     }
 
     public void removeAll() {
-
+        this.coefX = new ArrayList<>();
+        this.coefH = new ArrayList<>();
     }
 
     public double getXo() {
