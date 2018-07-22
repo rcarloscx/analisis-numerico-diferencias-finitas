@@ -62,4 +62,7 @@ public class Numerador {
         this.funcion = funcion;
     }
     
+    public int getTamanio(){
+        return this.coefX.size();
+    }
 }
