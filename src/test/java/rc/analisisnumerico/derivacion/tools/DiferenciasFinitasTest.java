@@ -45,7 +45,7 @@ public class DiferenciasFinitasTest {
         System.out.println("AdelantePrimeraOrden1");
         DiferenciasFinitas instance = new DiferenciasFinitas(1, 0.1, new Funcion("(2)*(x)"));
         double expResult = 2.0000000000000018;
-        double result = instance.AdelantePrimeraOrden1();
+        double result = instance.adelantePrimeraOrden1();
         assertEquals(expResult, result, 2.0000000000000018);
     }
     

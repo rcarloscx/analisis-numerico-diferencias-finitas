@@ -20,14 +20,14 @@ public class DiferenciasFinitas {
     }
 
     //Diferencias finitas hacia adelante
-    public double AdelantePrimeraOrden1() {
+    public double adelantePrimeraOrden1() {
         numerador.removeAll();
         numerador.add(1, 1);
         numerador.add(-1, 0);
         return numerador.reducir() / h;
     }
 
-    public double AdelantePrimeraOrden2() {
+    public double adelantePrimeraOrden2() {
         numerador.removeAll();
         numerador.add(1, 2);
         numerador.add(-2, 1);
@@ -35,7 +35,7 @@ public class DiferenciasFinitas {
         return numerador.reducir() / (Math.pow(h, 2));
     }
 
-    public double AdelantePrimeraOrden3() {
+    public double adelantePrimeraOrden3() {
         numerador.removeAll();
         numerador.add(1, 3);
         numerador.add(-3, 2);
@@ -44,7 +44,7 @@ public class DiferenciasFinitas {
         return numerador.reducir() / (Math.pow(h, 3));
     }
 
-    public double AdelantePrimeraOrden4() {
+    public double adelantePrimeraOrden4() {
         numerador.removeAll();
         numerador.add(1, 4);
         numerador.add(-4, 3);
@@ -54,7 +54,7 @@ public class DiferenciasFinitas {
         return numerador.reducir() / (Math.pow(h, 2));
     }
 
-    public double AdelanteSegundaOrden1() {
+    public double adelanteSegundaOrden1() {
         numerador.removeAll();
         numerador.add(-1, 2);
         numerador.add(4, 1);
@@ -62,7 +62,7 @@ public class DiferenciasFinitas {
         return numerador.reducir() / ((2) * (h));
     }
 
-    public double AdelanteSegundaOrden2() {
+    public double adelanteSegundaOrden2() {
         numerador.removeAll();
         numerador.add(-1, 3);
         numerador.add(4, 2);
@@ -71,7 +71,7 @@ public class DiferenciasFinitas {
         return numerador.reducir() / (Math.pow(h, 2));
     }
 
-    public double AdelanteSegundaOrden3() {
+    public double adelanteSegundaOrden3() {
         numerador.removeAll();
         numerador.add(-3, 4);
         numerador.add(14, 3);
@@ -81,7 +81,7 @@ public class DiferenciasFinitas {
         return numerador.reducir() / (Math.pow(h, 3));
     }
 
-    public double AdelanteSegundaOrden4() {
+    public double adelanteSegundaOrden4() {
         numerador.removeAll();
         numerador.add(-2, 5);
         numerador.add(11, 4);
