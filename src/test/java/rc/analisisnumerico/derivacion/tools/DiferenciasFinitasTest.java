@@ -124,5 +124,93 @@ public class DiferenciasFinitasTest {
         double result = instance.adelanteSegundaOrden4();
         assertEquals(expResult, result, 0.0);
     }
+
+    /**
+     * Test of atrasPrimeraOrden1 method, of class DiferenciasFinitas.
+     */
+    @Test
+    public void testAtrasPrimeraOrden1() {
+        DiferenciasFinitas instance = new DiferenciasFinitas(1, 0.1, new Funcion("(2)*(x)"));
+        double expResult = -2.0000000000000018;
+        double result = instance.atrasPrimeraOrden1();
+        assertEquals(expResult, result, 0.0);
+    }
+
+    /**
+     * Test of atrasPrimeraOrden2 method, of class DiferenciasFinitas.
+     */
+    @Test
+    public void testAtrasPrimeraOrden2() {
+        DiferenciasFinitas instance = new DiferenciasFinitas(1, 0.1, new Funcion("(2)*(x)"));
+        double expResult = 0.0;
+        double result = instance.atrasPrimeraOrden2();
+        assertEquals(expResult, result, 0.0);
+    }
+
+    /**
+     * Test of atrasPrimeraOrden3 method, of class DiferenciasFinitas.
+     */
+    @Test
+    public void testAtrasPrimeraOrden3() {
+        DiferenciasFinitas instance = new DiferenciasFinitas(1, 0.1, new Funcion("(2)*(x)"));
+        double expResult = 4.440892098500625E-13;
+        double result = instance.atrasPrimeraOrden3();
+        assertEquals(expResult, result, 0.0);
+    }
+
+    /**
+     * Test of atrasPrimeraOrden4 method, of class DiferenciasFinitas.
+     */
+    @Test
+    public void testAtrasPrimeraOrden4() {
+        DiferenciasFinitas instance = new DiferenciasFinitas(1, 0.1, new Funcion("(2)*(x)"));
+        double expResult = 1.5543122344752188E-11;
+        double result = instance.atrasPrimeraOrden4();
+        assertEquals(expResult, result, 0.0);
+    }
+
+    /**
+     * Test of atrasSegundaOrden1 method, of class DiferenciasFinitas.
+     */
+    @Test
+    public void testAtrasSegundaOrden1() {
+        DiferenciasFinitas instance = new DiferenciasFinitas(1, 0.1, new Funcion("(2)*(x)"));
+        double expResult = 1.9999999999999996;
+        double result = instance.atrasSegundaOrden1();
+        assertEquals(expResult, result, 0.0);
+    }
+
+    /**
+     * Test of atrasSegundaOrden2 method, of class DiferenciasFinitas.
+     */
+    @Test
+    public void testAtrasSegundaOrden2() {
+        DiferenciasFinitas instance = new DiferenciasFinitas(1, 0.1, new Funcion("(2)*(x)"));
+        double expResult = 4.4408920985006255E-14;
+        double result = instance.atrasSegundaOrden2();
+        assertEquals(expResult, result, 0.0);
+    }
+
+    /**
+     * Test of atrasSegundaOrden3 method, of class DiferenciasFinitas.
+     */
+    @Test
+    public void testAtrasSegundaOrden3() {
+        DiferenciasFinitas instance = new DiferenciasFinitas(1, 0.1, new Funcion("(2)*(x)"));
+        double expResult = 8.88178419700125E-12;
+        double result = instance.atrasSegundaOrden3();
+        assertEquals(expResult, result, 0.0);
+    }
+
+    /**
+     * Test of atrasSegundaOrden4 method, of class DiferenciasFinitas.
+     */
+    @Test
+    public void testAtrasSegundaOrden4() {
+        DiferenciasFinitas instance = new DiferenciasFinitas(1, 0.1, new Funcion("(2)*(x)"));
+        double expResult = 7.105427357601E-11;
+        double result = instance.atrasSegundaOrden4();
+        assertEquals(expResult, result, 0.0);
+    }
     
 }
