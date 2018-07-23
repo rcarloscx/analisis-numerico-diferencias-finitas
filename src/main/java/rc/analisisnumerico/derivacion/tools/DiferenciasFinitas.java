@@ -243,7 +243,7 @@ public class DiferenciasFinitas {
     }
 
     //Diferencias finitas de los cinco puntos
-    public double CincoPuntosPrimera() {
+    public double cincoPuntosPrimera() {
         numerador.removeAll();
         numerador.add(-25, 0);
         numerador.add(48, 1);
@@ -253,7 +253,7 @@ public class DiferenciasFinitas {
         return numerador.reducir() / ((12) * (h));
     }
 
-    public double CincoPuntosSegunda() {
+    public double cincoPuntosSegunda() {
         numerador.removeAll();
         numerador.add(1, -2);
         numerador.add(-8, -1);
@@ -261,7 +261,15 @@ public class DiferenciasFinitas {
         numerador.add(-1, 2);
         return numerador.reducir() / ((12) * (h));
     }
-    
+
+    //Diferencias finitas de los tres puntos
+    public double tresPuntos() {
+        numerador.removeAll();
+        numerador.add(-3, 0);
+        numerador.add(4, 1);
+        numerador.add(-1, 2);
+        return numerador.reducir() / ((2) * (h));
+    }
 
     public Funcion getFuncion() {
         return this.numerador.getFuncion();
