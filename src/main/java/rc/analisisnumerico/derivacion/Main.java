@@ -5,6 +5,9 @@
  */
 package rc.analisisnumerico.derivacion;
 
+import rc.analisisnumerico.derivacion.tools.DiferenciasFinitas;
+import rc.analisisnumerico.derivacion.tools.Funcion;
+
 /**
  *
  * @author rcarlos
@@ -15,7 +18,8 @@ public class Main {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        // TODO code application logic here
+        DiferenciasFinitas dif = new DiferenciasFinitas(1, 0.1, new Funcion("(2)*(x)"));
+        System.out.println("Diferencia finita con la formula de los tres puntos: " + dif.tresPuntos());
     }
     
 }
