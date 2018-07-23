@@ -42,7 +42,6 @@ public class NumeradorTest {
      */
     @Test
     public void testAdd() {
-        System.out.println("add");
         double coeficienteFuncion = 1.0;
         double coeficienteH = 1.0;
         Numerador instance = new Numerador();
@@ -50,7 +49,7 @@ public class NumeradorTest {
         instance.add(coeficienteFuncion, coeficienteH);
         int expResult = 1;
         int result = instance.getTamanio();
-        assertEquals(expResult, result, 1);
+        assertEquals(expResult, result, 0.0);
     }
 
     /**
@@ -58,13 +57,12 @@ public class NumeradorTest {
      */
     @Test
     public void testReducir() {
-        System.out.println("reducir");
         Numerador instance = new Numerador(1, 0.1, new Funcion("(2)*(x)"));
         instance.removeAll();
         instance.add(1, 1);
         double expResult = 2.2;
         double result = instance.reducir();
-        assertEquals(expResult, result, 2.2);
+        assertEquals(expResult, result, 0.0);
     }
 
     /**
@@ -72,12 +70,11 @@ public class NumeradorTest {
      */
     @Test
     public void testRemoveAll() {
-        System.out.println("removeAll");
         Numerador instance = new Numerador();
         instance.removeAll();
         double expResult = 0;
         int result = instance.getTamanio();
-        assertEquals(expResult, result, 0);
+        assertEquals(expResult, result, 0.0);
     }
 
 }

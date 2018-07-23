@@ -47,7 +47,7 @@ public class FuncionTest {
         Funcion instance = new Funcion("(2)*(x)");
         double expResult = 2.0;
         double result = instance.eval(x);
-        assertEquals(expResult, result, 2.0);
+        assertEquals(expResult, result, 0.0);
     }
     
 }
