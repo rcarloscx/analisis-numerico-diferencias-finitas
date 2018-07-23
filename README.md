@@ -8,6 +8,7 @@ Proyecto donde se realiza una solucion de derivacion mediante las formulas de di
 ### Formula para calcular la primera de diferencia centrada de orden 2
     f''(Xo) = ( f(Xo+h) - 2f(Xo) + f(Xo-2h) ) / h²
 Si a analizamos cada elemento de la formula:
-### f(Xo+h)
+### -f(Xo+h)
 Como podemos ver, el coeficiente de la funcion es 1 y el coficiente de la h es 1
+
 
