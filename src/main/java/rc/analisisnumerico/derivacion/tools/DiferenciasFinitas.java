@@ -165,6 +165,83 @@ public class DiferenciasFinitas {
         return numerador.reducir() / (Math.pow(h, 4));
     }
 
+    //Diferencias finitas hacia Centradas
+    public double centradaPrimeraOrden1() {
+        numerador.removeAll();
+        numerador.add(1, 1);
+        numerador.add(-1, -1);
+        return numerador.reducir() / ((2) * (h));
+    }
+
+    public double centradaPrimeraOrden2() {
+        numerador.removeAll();
+        numerador.add(1, 1);
+        numerador.add(-2, 0);
+        numerador.add(1, -1);
+        return numerador.reducir() / (Math.pow(h, 2));
+    }
+
+    public double centradaPrimeraOrden3() {
+        numerador.removeAll();
+        numerador.add(1, 2);
+        numerador.add(-2, 1);
+        numerador.add(2, -1);
+        numerador.add(-1, -2);
+        return numerador.reducir() / ((2) * (Math.pow(h, 3)));
+    }
+
+    public double centradaPrimeraOrden4() {
+        numerador.removeAll();
+        numerador.add(1, 2);
+        numerador.add(-4, 1);
+        numerador.add(6, 0);
+        numerador.add(-4, -1);
+        numerador.add(1, -2);
+        return numerador.reducir() / (Math.pow(h, 4));
+    }
+
+    public double centradaSegundaOrden1() {
+        numerador.removeAll();
+        numerador.add(-1, 2);
+        numerador.add(8, 1);
+        numerador.add(-8, -1);
+        numerador.add(1, -2);
+        return numerador.reducir() / ((12) * (h));
+    }
+
+    public double centradaSegundaOrden2() {
+        numerador.removeAll();
+        numerador.add(-1, 2);
+        numerador.add(16, 1);
+        numerador.add(-30, 0);
+        numerador.add(16, -1);
+        numerador.add(-1, -2);
+        return numerador.reducir() / ((12) * (Math.pow(h, 2)));
+    }
+
+    public double centradaSegundaOrden3() {
+        numerador.removeAll();
+        numerador.add(-1, 3);
+        numerador.add(8, 2);
+        numerador.add(-12, 1);
+        numerador.add(12, -1);
+        numerador.add(-8, -2);
+        numerador.add(1, -3);
+        return numerador.reducir() / ((8) * (Math.pow(h, 3)));
+    }
+
+    public double centradaSegundaOrden4() {
+        numerador.removeAll();
+        numerador.add(-1, 3);
+        numerador.add(12, 2);
+        numerador.add(-39, 1);
+        numerador.add(56, 0);
+        numerador.add(-39, -1);
+        numerador.add(12, -2);
+        numerador.add(-1, -3);
+        return numerador.reducir() / ((6) * (Math.pow(h, 4)));
+    }
+
     public Funcion getFuncion() {
         return this.numerador.getFuncion();
     }
