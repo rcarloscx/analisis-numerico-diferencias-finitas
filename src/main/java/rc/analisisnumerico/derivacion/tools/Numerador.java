@@ -14,7 +14,7 @@ import java.util.List;
  */
 public class Numerador {
 
-    private List<Double> coefX;
+    private List<Double> coefFuncion;
     private List<Double> coefH;
     private double xo;
     private double h;
@@ -31,22 +31,22 @@ public class Numerador {
     }
 
     public void add(double coeficienteFuncion, double coeficienteH) {
-        this.coefX.add(coeficienteFuncion);
+        this.coefFuncion.add(coeficienteFuncion);
         this.coefH.add(coeficienteH);
     }
 
     public double reducir() {
         double num = 0.0;
         double n;
-        for (int i = 0; i < coefX.size(); i++) {
-            n = this.coefX.get(i) * (funcion.eval(xo + ((coefH.get(i)) * (h))));
+        for (int i = 0; i < coefFuncion.size(); i++) {
+            n = this.coefFuncion.get(i) * (funcion.eval(xo + ((coefH.get(i)) * (h))));
             num = num + n;
         }
         return num;
     }
 
     public void removeAll() {
-        this.coefX = new ArrayList<>();
+        this.coefFuncion = new ArrayList<>();
         this.coefH = new ArrayList<>();
     }
 
@@ -75,6 +75,6 @@ public class Numerador {
     }
 
     public int getTamanio() {
-        return this.coefX.size();
+        return this.coefFuncion.size();
     }
 }
