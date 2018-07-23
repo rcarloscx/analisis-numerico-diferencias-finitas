@@ -300,5 +300,38 @@ public class DiferenciasFinitasTest {
         double result = instance.centradaSegundaOrden4();
         assertEquals(expResult, result, 0.0);
     }
+
+    /**
+     * Test of cincoPuntosPrimera method, of class DiferenciasFinitas.
+     */
+    @Test
+    public void testCincoPuntosPrimera() {
+        DiferenciasFinitas instance = new DiferenciasFinitas(1, 0.1, new Funcion("(2)*(x)"));
+        double expResult = 2.0000000000000164;
+        double result = instance.cincoPuntosPrimera();
+        assertEquals(expResult, result, 0.0);
+    }
+
+    /**
+     * Test of cincoPuntosSegunda method, of class DiferenciasFinitas.
+     */
+    @Test
+    public void testCincoPuntosSegunda() {
+        DiferenciasFinitas instance = new DiferenciasFinitas(1, 0.1, new Funcion("(2)*(x)"));
+        double expResult = 2.0000000000000004;
+        double result = instance.cincoPuntosSegunda();
+        assertEquals(expResult, result, 0.0);
+    }
+
+    /**
+     * Test of tresPuntos method, of class DiferenciasFinitas.
+     */
+    @Test
+    public void testTresPuntos() {
+        DiferenciasFinitas instance = new DiferenciasFinitas(1, 0.1, new Funcion("(2)*(x)"));
+        double expResult = 2.000000000000004;
+        double result = instance.tresPuntos();
+        assertEquals(expResult, result, 0.0);
+    }
     
 }
